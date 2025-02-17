@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;
+        <meta charset="UTF-8">
+       
+        <title>oracleagroindustries</title>
+        <style>
+         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap');
+         .video-section {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Fullscreen */
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        body {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            background-color: #f8f8f8;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background: linear-gradient(to right, #1a1a1a, #333);
+            color: rgb(249, 241, 241);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .top-bar a {
+            color: rgb(13, 1, 1);
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+
+        .top-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Icons */
+        .social-icons a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover img {
+            transform: scale(1.2);
+        }
+
+        /* Navigation Bar */
+        .nav-bar {
+            background-color: black;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .logo img {
+            height: 300px;
+            transition: transform 0.3s ease-in-out;
+           width: 100px; height: 100%;
+        }
+
+        .logo img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-left: auto;
+        }
+
+        .nav-links li {
+            position: relative;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+        }
+
+        /* Hover Light Effect */
+        .nav-links a:hover {
+            color: black;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px white;
+        }
+
+        /* Dropdown Menu */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: rgb(255, 253, 253);
+            top: 100%;
+            left: 0;
+            width: 180px;
+            box-shadow: 0px 4px 10px rgba(12, 9, 9, 0.1);
+            border-radius: 5px;
+            z-index: 10;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            color: white;
+            font-size: 14px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .dropdown a:hover {
+            background: grey;
+        }
+
+        .nav-links li:hover .dropdown {
+            display: block;
+        }
+        /* Background Video */
+        .video-section video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        /* Text Content on Video */
+        .video-text {
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+
+        .video-text h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .video-text p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: auto;
+        }
+     
+            body {
+                margin: 0;
+                font-family: 'Poppins', sans-serif;
+
+            }
+            
+    
+            /* Top Bar */
+            .top-bar {
+                background: linear-gradient(to right, #3b4337, #5a6b47);
+                color: white;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 14px;
+            }
+            .top-bar a {
+                color: white;
+                text-decoration: none;
+                margin-left: 15px;
+                font-weight: bold;
+            }
+            .top-bar a:hover {
+                text-decoration: underline;
+            }
+    
+            /* Social Icons */
+            .social-icons a {
+                margin-left: 10px;
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+                transition: transform 0.3s ease-in-out;
+            }
+            .social-icons a:hover {
+                transform: scale(1.2);
+            }
+    
+            /* Navigation Bar */
+            .nav-bar {
+                background-color: white;
+                padding: 15px 20px;
+                display: flex;
+                align-items: center;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            }
+            .logo {
+                flex: 1;
+            }
+            .logo img {
+                height: 50px;
+            }
+    
+            /* Navigation Links */
+            .nav-links {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            .nav-links li {
+                margin: 0 15px;
+                position: relative;
+            }
+            .nav-links a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                font-size: 16px;
+                transition: color 0.3s ease-in-out;
+            }
+            .nav-links a:hover {
+                color: #5a6b47;
+            }
+    
+            /* Underline Animation */
+            .nav-links a::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -4px;
+                width: 100%;
+                height: 2px;
+                background-color: #5a6b47;
+                transform: scaleX(0);
+                transition: transform 0.3s ease-in-out;
+            }
+            .nav-links a:hover::after {
+                transform: scaleX(1);
+            }
+            #certificates {
+        font-family: 'Playfair Display', serif;
+        background-color: #f8f8f8;
+        text-align: center;
+        padding: 40px;
+    }
+
+    #certificates h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .certificate-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .certificate {
+        width: 220px;
+        height: 300px;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .certificate:hover {
+        transform: scale(1.1);
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+        .certificate-container {
+            flex-wrap: wrap;
+        }
+        .certificate {
+            width: 180px;
+            height: 250px;
+        }
+    }
+    /* Product Section */
+#products {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+/* Custom Heading */
+.highlighted-heading {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #120101;
+}
+
+.highlighted-text {
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    color: rgba(7, 0, 0, 0.999);
+}
+
+.highlighted-text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background-color: #41631a;
+    z-index: -1;
+    transition: width 0.4s ease-in-out;
+}
+
+.highlighted-text:hover::after {
+    width: 100%;
+}
+
+.highlighted-text:hover {
+    color: rgb(12, 1, 1);
+}
+
+/* Product List */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Individual Product */
+.product {
+    background: rgb(12, 1, 1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+/* Product Image */
+.product img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Product Title Hover Effect */
+.product h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    transition: color 0.4s ease-in-out;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.product h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background-color: #5a6b47;
+    z-index: -1;
+    transition: width 0.4s ease-in-out;
+}
+
+.product:hover h3::after {
+    width: 100%;
+}
+
+.product:hover h3 {
+    color: white;
+}
+
+/* Price */
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5a6b47;
+    transition: color 0.4s ease-in-out;
+}
+
+.product:hover .price {
+    color: #3b4337;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered effect */
+.product:nth-child(1) { animation-delay: 0.2s; }
+.product:nth-child(2) { animation-delay: 0.4s; }
+.product:nth-child(3) { animation-delay: 0.6s; }
+.product:nth-child(4) { animation-delay: 0.8s; }
+.product:nth-child(5) { animation-delay: 1s; }
+.product:nth-child(6) { animation-delay: 1.2s; }
+/* About Us Section */
+/* About Us Section */
+#about {
+    background: linear-gradient(to right, #f8f8f8, #ffffff);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.about-text h2 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #5a6b47;
+    background: #eaf4e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* About Image */
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    width: 90%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Scroll Animation */
+.slide-in {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text, .about-image {
+        max-width: 100%;
+    }
+}
+#haldi-section {
+        background-color: #ffffff; /* White background */
+        font-family: 'Georgia', serif;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        padding: 50px 0;
+    }
+    #haldi-heading {
+        position: relative;
+        font-size: 3em;
+        color: #d99200;
+        text-shadow: 3px 3px 8px rgba(255, 165, 0, 0.6);
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: inline-block;
+        background: rgba(255, 165, 0, 0.3);
+        transition: text-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    #haldi-heading:hover, #haldi-heading:focus {
+        text-shadow: 6px 6px 20px rgba(255, 165, 0, 1);
+        transform: scale(1.05);
+    }
+    /* Ensuring particles fall across the full section */
+    #haldi-section {
+        position: relative;
+        overflow: hidden;
+    }
+    .falling-haldi {
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        background-color: rgba(215, 156, 0, 0.7);
+        border-radius: 100%;
+        opacity: 0.8;
+        animation: fall linear infinite;
+    }
+    @keyframes fall {
+        from {
+            transform: translateY(-50px);
+            opacity: 1;
+        }
+        to {
+            transform: translateY(100vh);
+            opacity: 0;
+        }
+    }
+    #haldi-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    #haldi-text {
+        font-size: 1.2em;
+        color: #5a3d00;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        padding: 15px;
+        border-radius: 10px;
+        width: 60%;
+        text-align: center;
+    }
+    #haldi-image {
+        max-width: 300px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+    }
+    #makhana-section {
+        background-color: #f9f6f2;
+        font-family: 'Georgia', serif;
+        text-align: center;
+        padding: 50px 0;
+    }
+    #makhana-heading {
+        font-size: 3em;
+        color: #b08968;
+        text-shadow: 3px 3px 8px rgba(160, 120, 80, 0.6);
+        font-weight: bold;
+        transition: text-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    #makhana-heading:hover {
+        text-shadow: 6px 6px 20px rgba(160, 120, 80, 1);
+        transform: scale(1.05);
+    }
+    #makhana-text {
+        font-size: 1.2em;
+        color: #5a3d00;
+        transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    }
+    #makhana-text:hover {
+        color: #a06a3b;
+        transform: scale(1.02);
+    }
+    #makhana-image {
+        max-width: 300px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        margin-top: 20px;
+    }
+    body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #pet-categories {
+            margin: 50px 0;
+        }
+
+        #categories-container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        #categories-title {
+            background-color: #e7eee3;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 22px;
+            color: #131010;
+        }
+
+        #categories-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .category {
+            text-align: center;
+            width: 20%;
+        }
+
+        .category img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .category h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .category p {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b1c38;
+            color: rgb(1, 0, 0);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #timeline-section {
+            padding: 50px 20px;
+        }
+
+        #timeline-title {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #timeline-subtitle {
+            font-size: 16px;
+            max-width: 800px;
+            margin: 10px auto;
+            color: #07236a;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 3px;
+            background-color: #04022b;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1.5px;
+        }
+
+        .timeline-item {
+            padding: 20px;
+            position: relative;
+            background-color: #112244;
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+        }
+
+        .timeline-item.right {
+            left: 55%;
+            text-align: left;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 15px;
+            height: 15px;
+            background-color: #00aaff;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .timeline-date {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .timeline-content {
+            font-size: 16px;
+            color: #b0c4de;
+        }
+
+        .timeline img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b1c38;
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #news-section {
+            background-color: white;
+            color: #0b1c38;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #news-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #news-header h2 {
+            font-size: 32px;
+        }
+
+        #view-all {
+            padding: 10px 15px;
+            border: 2px solid #0b1c38;
+            background: transparent;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #0b1c38;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #view-all:hover {
+            background-color: #0b1c38;
+            color: white;
+        }
+
+        .news-card {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .news-card img {
+            width: 100%;
+            display: block;
+        }
+
+        .news-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 15px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .news-overlay strong {
+            display: block;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        .news-arrow {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background: rgba(255, 255, 255, 0.3);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .image-container img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .slider-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Adjust spacing between images */
+            overflow-x: auto; /* Allows scrolling if needed */
+            white-space: nowrap;
+        }
+        .slider-container img {
+            max-width: 18%; /* Ensures five images fit within 100% width */
+            height: auto;
+            object-fit: cover;
+        }
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+
+    /* Team Section */
+    .team-section {
+        padding: 50px 20px;
+        background: white;
+    }
+
+    .team-section h2 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .team-section p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 40px;
+    }
+
+    /* Team Container */
+    .team-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Individual Team Member */
+    .team-member {
+        width: 220px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .team-member:hover {
+        transform: translateY(-5px);
+    }
+
+    .team-member img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-bottom: 4px solid #2E7D32;
+    }
+
+    /* Role Label */
+    .role {
+        background: #2E7D32;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+           /* Joint Venture Section */
+           .companies {
+            text-align: center;
+            margin: 50px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Heading Style */
+        #heading {
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Partnership Image */
+        #image-container {
+            display: inline-block;
+            position: relative;
+        }
+
+        #partnership-image {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        #partnership-image:hover {
+            animation: shake 0.5s infinite;
+        }
+
+        /* Shake Animation */
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(5px); }
+        }
+
+        /* Company List */
+        #company-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .company-item {
+            margin: 10px 0;
+        }
+
+        /* Clickable Links */
+        .company-link {
+            text-decoration: none;
+            font-size: 18px;
+            color: #2980b9;
+            transition: color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .company-link:hover {
+            color: #e74c3c;
+        }
+        .categories-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .categories-card {
+        width: 200px;
+        text-align: center;
+    }
+    .categories-card img {
+        width: 100px;
+        height: 100px;
+        background-color: #f0f0f0;
+        display: block;
+        margin: 0 auto;
+    }
+    .categories-card h3 {
+        color: #3d220f;
+        margin-top: 10px;
+    }
+    .categories-card p {
+        color: gray;
+        font-size: 14px;
+    }
+    #food-chain-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .food-item {
+        text-align: center;
+        width: 150px;
+    }
+    .food-item img {
+        width: 100px;
+        height: 100px;
+    }
+    .arrow {
+        font-size: 24px;
+        color: #666;
+    }
+    .title {
+        font-weight: bold;
+        color: #2c3e50;
+    }
+    #decomposer {
+        grid-column: span 3;
+        margin-top: 30px;
+        text-align: center;
+
+        
+    }
+    #caption {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            color: #084909;
+        }
+
+        #details {
+            margin-bottom: 20px;
+        }
+
+        #image-container {
+            display: inline-block;
+            position: relative;
+        }
+
+        #shake-image {
+            width: 1000px;
+            height: auto;
+            border-radius: 100px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        #shake-image:hover {
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(5px); }
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #feature-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            color: rgba(7, 0, 0, 0.999);
+        }
+           
+   
+        
+
+        #feature-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #110101;
+        }
+
+        #feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            text-align: left;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .feature-item img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .feature-text {
+            font-family: 'Inter', sans-serif;
+
+        }
+        .feature-text h2{
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+          
+          
+          padding-top: 0px; /* Remove extra space */
+          margin-top: -30px;
+           
+        }
+
+        .feature-text h3 { 
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #0a8827;
+            
+        }
+
+        .feature-text p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            #feature-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            #feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .curved-text {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+            width: 300px;
+            height: 80px;
+            color: #555;
+        }
+
+        .curved-text span {
+            position: relative;
+            left: 50%;
+            transform-origin: bottom center;
+        }
+
+        /* Position each letter along an arc */
+        .curved-text span:nth-child(1) { transform: translateX(-50%) rotate(-20deg); }
+        .curved-text span:nth-child(2) { transform: translateX(-50%) rotate(-15deg); }
+        .curved-text span:nth-child(3) { transform: translateX(-50%) rotate(-10deg); }
+        .curved-text span:nth-child(4) { transform: translateX(-50%) rotate(-5deg); }
+        .curved-text span:nth-child(5) { transform: translateX(-50%) rotate(0deg); }
+        .curved-text span:nth-child(6) { transform: translateX(-50%) rotate(5deg); }
+        .curved-text span:nth-child(7) { transform: translateX(-50%) rotate(10deg); }
+        .curved-text span:nth-child(8) { transform: translateX(-50%) rotate(15deg); }
+        .curved-text span:nth-child(9) { transform: translateX(-50%) rotate(20deg); }
+        #footer-container {
+            background-color: #0d2417;
+            color: #ffffff;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-family: Arial, sans-serif;
+        }
+
+        #footer-links, #footer-contact, #footer-address, #footer-social {
+            flex: 1;
+            padding: 10px;
+        }
+
+        #footer-links h3,
+        #footer-contact h3,
+        #footer-address h3,
+        #footer-social h3 {
+            font-size: 16px;
+            font-weight: bold;
+            color: #a0c49d;
+            margin-bottom: 10px;
+        }
+
+        #footer-links a,
+        #footer-social a {
+            display: block;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        #footer-links a:hover,
+        #footer-social a:hover {
+            color: #a0c49d;
+        }
+
+        #footer-contact p,
+        #footer-address p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        #footer-bottom {
+            text-align: center;
+            padding: 10px;
+            background-color: #092015;
+            color: #ffffff;
+            font-size: 12px;
+        }
+        #main-container {
+            height: 100vh;
+            overflow: scroll; /* Enable scrolling */
+            scrollbar-width: thin; /* For Firefox */
+            scrollbar-color: #00aaff #f0f0f0; /* For Firefox */
+        }
+
+        /* Webkit browsers (Chrome, Safari, Edge) */
+        #main-container::-webkit-scrollbar {
+            width: 100px; /* Increased width of the scrollbar by 5x */
+        }
+
+        #main-container::-webkit-scrollbar-track {
+            background: #f0f0f0; /* Track color */
+        }
+
+        #main-container::-webkit-scrollbar-thumb {
+            background: url('logo1.png') no-repeat center;
+            background-size: contain; /* Keep the image aspect ratio */
+            border-radius: 15px; /* Optional rounded corners */
+        }
+
+        /* Add content to test scrolling */
+        #content {
+            height: 200%;
+            padding: 20px;
+        }
+        #global-reset {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full-screen image */
+        #clock-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('makhanaclock.png') no-repeat center center;
+            background-size: cover; /* Ensure the image covers the screen */
+        }
+
+        /* Title and Subheading styles */
+        #title-container{
+            position: absolute
+        }
+       
+
+       
+    </style>
+       
+    </head>
+   
+    
+    
+    <body>
+        <div id="main-container">
+            
+    
+        <div class="top-bar">
+            <div>
+                📞 <a href="tel:+91 9431301887">+91 9431301887</a> | ✉️ 
+                <a href="oracleaagro@gmail.com">oracleaagro@gmail.com</a>
+            </div>
+            <div class="social-icons">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+    
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Natural Agro Foods Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+    
+                <li>
+                    <a href=#products>PRODUCTS ▼</a>
+                    <div class="dropdown">
+                        <a href="spices.html">Spices</a>
+                        <a href="flours.html">Flours</a>
+                        <a href="papad.html">Papad</a>
+                        <a href="instant-mix.html">Instant Mix</a>
+                    </div>
+                </li>
+    
+                <li><a href=#about>COMPANY PROFILE</a></li>
+              
+                <li><a href=#timeline-section>INFRASTRUCTURE</a></li>
+                <li><a href=#certificates>CERTIFICATES</a></li>
+    
+                <li>
+                    <a href=>CONTACT US ▼</a>
+                    <div class="dropdown">
+                        <a href="tel:+919879598786"> <pre>📞   <em>Call Us</pre></em> </a>
+                        <a href="mailto:sales@naturalagrofood.com"><pre>✉️    <em>Email</em></pre> </a>
+                        <a href="https://facebook.com" target="_blank"><pre>📘  <em>Facebook</em></pre> </a>
+                        <a href="https://instagram.com" target="_blank"><pre>📷  <em>Instagram</em></pre></a>
+                        <a href="https://linkedin.com" target="_blank"><pre>🔗  <em>LinkedIn</em></pre> </a>
+                        <a href="https://youtube.com" target="_blank"><pre>▶️  <em>YouTube</em></pre></a>
+                    </div>
+                </li>
+    
+                <li><a href=#inquiry>INQUIRY</a></li>
+            </ul>
+        </div>
+    <section>
+        <div class="video-section">
+            <video autoplay muted loop>
+                <source src="oracle agro industries.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-text">
+                <h2>“Sourcing the Best, Serving the greatest”</h2>
+                <p>Nature's Best, for Your Ultimate Well-being and timeless nutrition for mordern living</p>
+            </div>
+        </div>
+    
+    </section>
+<section id="about">
+    <div class="about-container">
+        <div class="about-text">
+            <div class="curved-text">
+                <h3>WHO ARE WE</h3>
+                
+            </div>
+        
+           
+            <p>
+                <span class="highlight">We are  a trusted aggregator and procurer, ie a sourcing specialist</span> who are dedicated to bringing you nutritious, pure, and original agricultural products  <strong>straight from the source.</strong>
+            </p>
+            <p>
+                We work closely with farmers to ensure the highest quality produce, cultivated with care,sustainability <strong>authenticity and transparency</strong>.
+            </p>
+            <p>
+                Our commitment to excellence means that every product we deliver retains its natural goodness, free from harmful additives. Whether it’s fresh <em>turmeric</em>, wholesome grains, or organic superfoods, we take pride in connecting nature’s best with your needs.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="imageabc.png" alt="Farm to Table">
+        </div>
+    </div>
+</section>
+
+
+
+<div class="slider-container">
+    <div class="slider">
+        <img src="Screenshot1.png" alt="Screenshot 1">
+        <img src="Screenshot2.png" alt="Screenshot 2">
+        <img src="Screenshot3.png" alt="Screenshot 3">
+        <img src="Screenshot4.png" alt="Screenshot 4">
+        <img src="Screenshot1.png" alt="Screenshot 5">
+      
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+
+</div>
+
+<div id="caption">
+    <h2 id="details"><EM>The Finest Harvests </EM>from Across <EM> India  </EM>
+    </h2>
+    <div id="image-container">
+        <img id="shake-image" src="NOW.jpg" alt="Sample Image">
+    </div>
+</div>
+<div id="haldi-section">
+    <h1 id="haldi-heading">Haldi - The Golden Spice</h1>
+    <div id="haldi-content">
+        <div id="haldi-text">
+            Turmeric, known as Haldi in India, is a powerful spice with medicinal properties. It has been used for centuries for its anti-inflammatory and antioxidant benefits.
+        </div>
+        <div style="font-size: 20px; font-weight: bold; text-align: center; color: #333; padding: 20px; background-color: #f8e7a2; border: 2px solid #d4a017; border-radius: 10px;">
+            While others offer Haldi with just <span style="color: #d9534f;">3%</span> cumin, we go beyond by providing a powerful <span style="color: #5cb85c;">9-11%</span>—ensuring richer flavor and enhanced benefits.
+        </div>
+    
+        <img src="haldi.png" alt="Haldi" id="haldi-image">
+    </div>
+</div>
+<div id="makhana-section">
+    <h1 id="makhana-heading">Makhana -The Food OF Gods</h1>
+    <div id="makhana-text">
+        Makhana- THE SUPERFOOD , also known as fox nuts, is a rich source of protein and antioxidants. It is a healthy, gluten-free snack with amazing nutritional benefits.
+    </div>
+    <img src="makhana.jpeg" alt="Makhana" id="makhana-image">
+   
+</div>
+<div id="global-reset">
+
+    <div id="clock-container">
+        <div id="title-container">
+            <h2 style=" color:#07236a ; text-align: center;"> MAKAHANA CLOCK</h2>
+           
+        
+        </div>
+    </div>
+
+</div>
+
+<section id="pet-categories">
+    <div id="categories-container">
+        <div id="categories-title">Our Categories</div>
+        <div id="categories-list">
+            <div class="category">
+                <img src="cs.png" alt="coconut sugar">
+                <h3 style="color: #120101;">Coconut Sugar</h3>
+                <p>"Natural sweetener, low glycemic, nutrient-rich, unrefined, eco-friendly, caramel-like taste." </p>
+            </div>
+            <div class="category">
+                <img src="pr.png" alt="puffed rice">
+                <h3 style="color: #120101;"> Puffed Rice</h3>
+                <p>"Light, crispy, low-calorie, gluten-free, airy texture, nutritious, easily digestible."</p>
+            </div>
+            <div class="category">
+                <img src="bp.png" alt="black pepper">
+                <h3 style="color: #120101;">Black Pepper</h3>
+                <p>"Bold, spicy, antioxidant-rich, digestive aid, immunity booster, enhances absorption."</p>
+            </div>
+            <div class="category">
+                <img src="mp.png" alt="moringa powder">
+                <h3 style="color: #120101;">Moringa Powder</h3>
+                <p>"Nutrient-dense, antioxidant-rich, energy-boosting, detoxifying, immune-supporting, anti-inflammatory."</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="categories-container">
+    <div class="categories-card">
+        <img src="1.png" alt="Cashew Nuts">
+        <h3>Cashew Nuts</h3>
+        <p> "Creamy, nutrient-dense, heart-healthy, protein-rich, energy-boosting, naturally sweet, antioxidant-packed."</p>
+    </div>
+    <div class="categories-card">
+        <img src="2.png" alt="Palm Jaggery">
+        <h3>Palm jaggery </h3>
+        <p>"Natural sweetener, mineral-rich, unrefined, eco-friendly, digestive aid, immunity-boosting, caramel-like taste."</p>
+    </div>
+    <div class="categories-card">
+        <img src="3.png" alt="Sattu">
+        <h3>Sattu </h3>
+        <p> "Protein-rich, fiber-dense, energizing, gluten-free, cooling effect, easily digestible, traditional superfood."</p>
+    </div>
+    <div class="categories-card">
+        <img src="4.png" alt="chakki fresh atta">
+        <h3>Chakki Fresh Atta </h3>
+        <p>"Stone-ground, fiber-rich, whole wheat, nutritious, soft texture, enhances digestion, traditional milling method."</p>
+    </div>
+</div>
+<section id="timeline-section">
+    <div  style="color: #120101;"id="timeline-title">The Project Timeline</div>
+    <p id="timeline-subtitle">
+        Founded in 2016, Oracle Agro Industries has rapidly emerged as a key player in the global agricultural trade industry. The company specializes in the export and import of a wide range of high-quality agri-products, providing clients with fresh, pure, and premium-grade offerings. With a dedication to quality and service, Oracle Agro Industries has built a strong reputation among customers and partners worldwide.
+    </p>
+
+    <div class="timeline">
+        <div class="timeline-item left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">April (2022)</div>
+            <div class="timeline-content">
+                <strong>Project launch</strong>
+                <p>Official project start and project team onboarded.</p>
+                <img src="project.jpg" alt="Project Launch">
+                <img src="project1.jpg" alt="Project Launch">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="news-section">
+    <div id="news-header">
+        <h2>News & Updates</h2>
+        <button id="view-all">VIEW ALL NEWS</button>
+    </div>
+
+    <div class="news-card">
+        <a href="https://economictimes.indiatimes.com/magazines/panache/zerodhas-nikhil-kamaths-favourite-food-makhana-gets-a-big-boost-in-budget-2025/articleshow/117818678.cms?from=mdr#" target="_blank">
+            <img src="your-image.png" alt="Your Product" style="width: 800px; height: 300px; border-radius: 10px; margin-bottom: 30px;border-color: #04022b;">
+        </a>
+        <a href="https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/how-to-use-haldi-to-control-high-blood-pressure-naturally/articleshow/118206183.cms" target="_blank">
+            <img src="your-imag1.png" alt="Your Product" style="width: 800px; height: 300px; border-radius: 10px; margin-bottom: 30px;border-color: #04022b;">
+        </a>
+        <a href="https://timesofindia.indiatimes.com/life-style/health-fitness/web-stories/10-healthy-ways-to-eat-makhana-for-maximum-benefits/photostory/118297730.cms" target="_blank">
+            <img src="your-imag2.png" alt="Your Product" style="width: 800px; height: 300px; border-radius: 10px;border-color: #020111;">
+        </a>
+        <div class="news-overlay">
+            <strong>ARTIST COLLAB - 27/11/24</strong>
+            Makhana is a super food is a nutrient-packed or nutrient- rich food that is considered to be beneficial for overall health and well-being. 
+        </div>
+        <div class="news-arrow">➤</div>
+    </div>
+</section>
+
+
+        <section id="certificates">
+            <h2>Our Certifications</h2>
+            <div class="certificate-container">
+                <img src="Certificate1.png" alt="Certificate 1" class="certificate">
+                <img src="Certificate2.png" alt="Certificate 2" class="certificate">
+                <img src="Certificate3.png" alt="Certificate 3" class="certificate">
+                <img src="Certificate4.png" alt="Certificate 4" class="certificate">
+                <img src="Certificate5.png" alt="Certificate 5" class="certificate">
+                <img src="Certificate6.png" alt="Certificate 5" class="certificate">
+            </div>
+        </section>
+        <section id="products">
+            <h2 class="highlighted-heading">
+                <span class="heading-font">Ganesh</span> 
+                <span class="highlighted-text">Natural Products</span>
+            </h2>
+        
+            <div class="product-list">
+                <div class="product">
+                    <img src="bhujia.png" alt="Turmeric Powder">
+                    <h3>Bikaneri Bhujia</h3>
+                   
+                </div>
+        
+                <div class="product">
+                    <img src="lalmirch.png" alt="Red Chilli Powder">
+                    <h3>Red Chilli Powder</h3>
+                   
+                </div>
+        
+                <div class="product">
+                    <img src="dhania.png" alt="Coriander Powder">
+                    <h3>Coriander Powder</h3>
+                   
+                </div>
+        
+                <div class="product">
+                    <img src="jeera.png" alt="Black Pepper Seeds">
+                    <h3>Jeera Powder</h3>
+                   
+                </div>
+        
+                <div class="product">
+                    <img src="atta.png" alt="Whole Wheat Chakki Atta">
+                    <h3>Whole Wheat Chakki Atta</h3>
+                  
+                </div>
+        
+                <div class="product">
+                    <img src="millet.png" alt="Multigrain Atta">
+                    <h3>unbleached Maida</h3>
+                    
+                </div>
+            </div>
+        </section>
+       
+<div  class="companies">
+            <h1 id="heading">Our Strategic Joint Venture Partners for Excellence</h1>
+        
+            <img id="partnership-image" src="handhske.png" alt="Partnership Image">
+        
+            <ul id="company-list">
+                <li class="company-item"><a id="ganesh" class="company-link" href="https://ganeshkart.com" target="_blank">Ganesh Consumer Products Limited</a></li>
+                <li class="company-item"><a id="mithila" class="company-link" href="https://example.com/mithila-makhana" target="_blank">Shree Mithila Makhana Kishan Utpadak Sangathan Swavlambi Sahakari Samiti Limited</a></li>
+                <li class="company-item"><a id="saa-vishnu" class="company-link" href="https://saavishnu.com" target="_blank">Saa Vishnu Bakers Pvt Ltd</a></li>
+            </ul>
+        
+       
+     
+        </div>
+
+        <div class="team-section" id="team-section">
+            <h2 style=" color:#112244">OUR TEAM</h2>
+            <p>We are passionate about results, and also believe in having a lot of fun along the way.</p>
+            
+            <div class="team-container">
+                <!-- Team Member 1 -->
+                <div class="team-member">
+                    <img src="kusum.jpg" alt="CEO">
+                    <div class="role">PROMOTER- Kusum Agrawal</div>
+                    <p>
+                        A dynamic entrepreneur and social activist, Kusum Agarwal leads Oracle Aagro Industries, managing administration, HR, and daily operations while balancing business and home.</p>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-member">
+                    <img src="sushil1.jpg" alt="Operations">
+                    <div class="role">CEO- Sushil Kumar Agrawal</div>
+                    <p>A seasoned Chartered Accountant excels in financial management, auditing, strategic planning, and global expansion, driving nutraceutical exports, industry optimization, and compliance.</p>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-member">
+                    <img src="vikash.jpg" alt="Manager">
+                    <div class="role">GENERAL MANAGER- Vikash Agrawal</div>
+                    <p>Experienced General Manager optimizing operations, compliance, cost control, and supply chain, driving efficiency, lean manufacturing, and strategic growth in food processing.</p>
+                </div>
+                
+                <!-- Team Member 4 -->
+                <div class="team-member">
+                    <img src="harsha.jpg" alt="Human Resource">
+                    <div class="role"> Supply Chain Director& StrategicAlliance- Harsha Agrwal </div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div id="feature-section">
+            <h2 id="feature-heading">Our Promise: Pure, Premium, and Wholesome Goodness</h2>
+            <div id="feature-grid">
+                <div id="feature1" class="feature-item">
+                    <img src="icon1.png" alt="Bee">
+                    <div class="feature-text">
+                        <h3>Hand picked Premium Quality</h3>
+                        <p>We handpick the finest crops from the best regions, ensuring purity, nutrition, and superior taste.
+                        </p>
+                    </div>
+                </div>
+                <div id="feature2" class="feature-item">
+                    <img src="icon2.png" alt="Farmer">
+                    <div class="feature-text">
+                        <h3>Authenticity Guaranteed</h3>
+                        <p>Our products are 100% natural, free from additives, and sourced from the most trusted farms.
+                        </p>
+                    </div>
+                </div>
+                <div id="feature3" class="feature-item">
+                    <img src="icon3.png" alt="Plants">
+                    <div class="feature-text">
+                        <h3>Customer-Centric Approach
+                        </h3>
+                        <p>Quality and satisfaction are our priorities, providing only the best agro products for a healthier lifestyle.
+                        </p>
+                    </div>
+                </div>
+                <div id="feature4" class="feature-item">
+                    <img src="icon4.png" alt="Scarecrow">
+                    <div class="feature-text">
+                        <h3>Ethical Sourcing
+                        </h3>
+                        <p>We work closely with farmers, ensuring fair trade and sustainable livelihoods.
+                        </p>
+                    </div>
+                </div>
+                <div id="feature5" class="feature-item">
+                    <img src="icon5.png" alt="Well">
+                    <div class="feature-text">
+                        <h3>Nutrient-Rich Selection
+                        </h3>
+                        <p>Our products are packed with essential nutrients, promoting a healthier lifestyle.
+                        </p>
+                    </div>
+                </div>
+                <div id="feature6" class="feature-item">
+                    <img src="icon6.png" alt="Truck">
+                    <div class="feature-text">
+                        <h3>Trusted by Many
+                        </h3>
+                        <p>We have built a reputation for quality, consistency, and customer satisfaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer-container">
+            <div id="footer-links">
+                <h3>Links</h3>
+                <a href="#team-section">Team And Management</a>
+                <a href="#about">Who we are</a>
+                <a href="#news-section">News</a>
+               
+            </div>
+    
+            <div id="footer-contact">
+                <h3>General enquiries</h3>
+                <p>oracleaagro@gmail.com</p>
+                <h3>Org. number</h3>
+                <p>9431310887</p>
+            </div>
+    
+            <div id="footer-address">
+                <h3>Plot No. C-1(P) & C-2 (P), </h3>
+                <p>7th Phase Adityapur Industrial Are,</p>
+                <p> Gamharia,Jamshedpur-832109</p>
+            </div>
+    
+            <div id="footer-social">
+                <h3>Sites and social media</h3>
+                <a href="#">LinkedIn</a>
+               
+            </div>
+        </footer>
+    
+        <div id="footer-bottom">
+            Designed by श्रीsha
+        </div>
+     
+            
+        
+    
+       <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        function createHaldiParticle() {
+            let haldi = document.createElement("div");
+            haldi.classList.add("falling-haldi");
+            document.getElementById("haldi-section").appendChild(haldi);
+            
+            let startPos = Math.random() * window.innerWidth; /* Ensures particles appear across the full width */
+            let duration = Math.random() * 3 + 2;
+            
+            haldi.style.left = startPos + "px";
+            haldi.style.animationDuration = duration + "s";
+            
+            setTimeout(() => {
+                haldi.remove();
+            }, duration * 1000);
+        }
+        
+        setInterval(createHaldiParticle, 100);
+    });
+</script>
+<script>
+        // Slide-in effect on scroll
+        document.addEventListener("DOMContentLoaded", function() {
+            const aboutText = document.querySelector(".about-text");
+    
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("slide-in");
+                    }
+                });
+            }, { threshold: 0.5 });
+    
+            observer.observe(aboutText);
+        });
+    </script>
+     </div>
+</body>
+</html>
